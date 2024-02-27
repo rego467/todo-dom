@@ -17,5 +17,6 @@ const handleEdits = (id)=>{
   }
 
   localStorage.setItem("notes", JSON.stringify(data))
+  window.location = "main.html"
 }
 edit.addEventListener("click", ()=>handleEdits(id))

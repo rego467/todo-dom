@@ -18,20 +18,27 @@
   width: 100%; 
   background-color: azure;
   align-items: center;
+  padding: 10px;
 }
 
+.h1-edit-page{
+  font-size: 23px;
+  margin: 20px;
+}
 .forms-input{
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   gap: 10px;
   display: flex;
   flex-direction: column;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
 .edit{
   padding: 5px;
   border-radius: 5px;
-  border: 2px solid gray;
+  border: 2px solid black;
   font-size: 15px;
   font-weight: 700;
   width: 100px;
@@ -39,17 +46,22 @@
 
 @media only screen and (max-width: 526px) {
  .container{
-  background-color: rebeccapurple;
+  background-color: white;
+ }
+ .forms-input{
+  display: flex;
+  margin: 10px;
+  background-color: antiquewhite;
  }
 }
 
 @media only screen and (min-width: 527px) {
   .container{
-   background-color: yellow;
+   background-color: white;
   }
   .forms-input{
     width: 500px;
-    padding: 10px;
+    padding: 20px;
     gap: 10px;
     display: flex;
     flex-direction: column;
