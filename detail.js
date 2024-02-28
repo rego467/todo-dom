@@ -24,7 +24,7 @@ const callbackById =(id,arr,callback)=>{
 
 const handleDeletes = (id)=>{
   let finds = data.findIndex(item => item.id === ids) 
-  if(finds !== id){
+  if(finds !== -1){
     data.splice(finds, 1)
     localStorage.setItem("notes", JSON.stringify(data))
     window.location ="main.html"
