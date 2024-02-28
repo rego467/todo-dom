@@ -24,6 +24,7 @@ main{
   font-size: 20px;
   font-weight: 600;
 }
+
 .headingSatu{
   font-size: 26px;
   display: flex;
@@ -37,7 +38,7 @@ main{
   gap: 20px;
   margin: 10px 7px;
   margin-top: 30px;
-
+  align-items: center;
 }
 
 .list{
@@ -130,5 +131,28 @@ main{
   justify-content: center;
   height: 80vh;
   align-items: center;
+}
+
+@media only screen and (max-width: 526px) {
+  .divChild{
+    width: 100%;
+  }
+  .list{
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 527px) {
+  .list{
+    width: 500px;
+  }
+  .divChild{
+    width: 100%;
+  }
+  .listData{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 

@@ -41,7 +41,7 @@ const handleEdit = (id)=>{
 
 callbackById(ids, data, ({title, description, id})=>{
   const div = document.createElement("div")
-  
+  div.classList.add("detail")
   const h2 = document.createElement("h2")
   h2.innerHTML = title
 
@@ -63,7 +63,3 @@ callbackById(ids, data, ({title, description, id})=>{
   main.append(div)
 
 })
-
-// document.addEventListener("DOMContentLoaded", ()=>{
-  
-// })
